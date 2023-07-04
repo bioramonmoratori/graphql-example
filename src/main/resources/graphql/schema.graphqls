@@ -1,0 +1,15 @@
+type Usuario {
+  nome: String!
+  idade: Int!
+  endereco: String!
+}
+
+type Query{
+	
+	listaUsuarios: [Usuario]
+	
+}
+
+type Mutation{
+	cadastraUsuario(nome: String!, idade: Int!, endereco: String!): [Usuario]
+}
